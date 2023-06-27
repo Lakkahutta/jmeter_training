@@ -39,7 +39,4 @@ node {
  archiveArtifacts artifacts: '$WORKSPACE/$BUILD_NUMBER/JMeter.jtl, $WORKSPACE/$BUILD_NUMBER/HtmlReport/index.html'
 
     } 
-
-  }
-
 }
