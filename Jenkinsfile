@@ -12,7 +12,7 @@ node{
 
  sh "mkdir -p /tmp/reports"
 
- sh "cd C:/Users/Dzmitry_Mashenkou/Documents/performance/apache-jmeter-5.5/apache-jmeter-5.5/bin"
+ sh "cd /apache-jmeter-5.5/apache-jmeter-5.5/bin"
 
       sh """jmeter -Jjmeter.save.saveservice.output_format=xml
 
