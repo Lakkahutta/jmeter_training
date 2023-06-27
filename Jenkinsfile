@@ -1,15 +1,16 @@
 node{
  
- stage("Clone Git Repository") {
-            steps {
-                git(
-                    url: "https://github.com/ssbostan/testrepo.git",
-                    branch: "testDM",
-                    changelog: true,
-                    poll: true
-                )
-            }
- }
+ stage('Clone') {
+      // Clones the repository from the current branch name
+      echo 'Make the output directory'
+      sh 'mkdir -p build'
+
+      echo 'Cloning files from (branch: "' + branchName + '" )'
+      dir('build') {
+          git branch: branchName, credentialsId: 	gitCredentials, url: repoUrl
+      }     
+  }
+ 
  stage("configure") {
 
         sh "mkdir $WORKSPACE/$BUILD_NUMBER/"
