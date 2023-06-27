@@ -13,9 +13,8 @@ node{
  sh "mkdir -p /tmp/reports"
 
  sh "cd ./apache-jmeter-5.5/apache-jmeter-5.5/bin"
-   echo "$PWD"
 
-      sh """jmeter -Jjmeter.save.saveservice.output_format=xml
+      sh """$WORKSPACE/apache-jmeter-5.5/apache-jmeter-5.5/bin/jmeter -Jjmeter.save.saveservice.output_format=xml
 
           -n -t MAKE-Order-Test.jmx
 
