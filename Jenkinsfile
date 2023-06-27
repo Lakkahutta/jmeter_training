@@ -1,3 +1,7 @@
+String branchName = "testDM"
+String gitCredentials = "gitId"
+String repoUrl = "https://github.com/Lakkahutta/jmeter_training.git"
+
 node{
  
  stage('Clone') {
