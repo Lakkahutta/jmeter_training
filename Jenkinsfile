@@ -29,7 +29,7 @@ node{
 
  sh "cd ./apache-jmeter-5.5/apache-jmeter-5.5/bin"
 
- sh "$WORKSPACE/apache-jmeter-5.5/apache-jmeter-5.5/bin/jmeter -Jjmeter.save.saveservice.output_format=xml -n -t MAKE-Order-Test.jmx -l /tmp/reports/JMeter.jtl -e -o /tmp/reports/HtmlReport"
+ sh "$WORKSPACE/apache-jmeter-5.5/apache-jmeter-5.5/bin/jmeter -Jjmeter.save.saveservice.output_format=xml -n -t build/MAKE-Order-Test.jmx -l /tmp/reports/JMeter.jtl -e -o /tmp/reports/HtmlReport"
 
  }
 
