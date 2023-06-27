@@ -24,7 +24,7 @@ node {
 
       sh "jmeter -Jjmeter.save.saveservice.output_format=xml
 
-          -n -t jmeter_training/MAKE-Order-Test.jmx
+          -n -t MAKE-Order-Test.jmx
 
             -l /tmp/reports/JMeter.jtl -e -o /tmp/reports/HtmlReport"
 
