@@ -1,4 +1,4 @@
-node {
+node('test'){
 
  stage("configure") {
 
