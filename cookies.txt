@@ -1,3 +1,0 @@
-# JMeter generated Cookie file
-localhost	TRUE		FALSE	0	test	test_strategy_cookie
-localhost	TRUE		FALSE	0	wp_ic_session_${sessionId}	${sessionValue}
