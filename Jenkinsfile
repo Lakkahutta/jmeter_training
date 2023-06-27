@@ -1,9 +1,8 @@
 node{
 
 stage('clone git repo'){
-
- git -b testDM 'https://github.com/Lakkahutta/jmeter_training.git'
-
+ git credentialsId: 'gitId', url: 'https://github.com/Lakkahutta/jmeter_training.git'
+ git 'https://github.com/Lakkahutta/jmeter_training.git'
  }
 
  stage("configure") {
