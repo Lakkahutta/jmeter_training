@@ -9,7 +9,7 @@ node{
                     poll: true
                 )
             }
-
+ }
  stage("configure") {
 
         sh "mkdir $WORKSPACE/$BUILD_NUMBER/"
