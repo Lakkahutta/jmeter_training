@@ -1,0 +1,2 @@
+# JMeter generated Cookie file
+localhost	TRUE		FALSE	0	test	test_strategy_cookie
