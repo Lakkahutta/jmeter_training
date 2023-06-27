@@ -1,5 +1,11 @@
 node{
 
+stage('clone git repo'){
+
+ git clone -b testDM 'https://github.com/Lakkahutta/jmeter_training.git'
+
+ }
+
  stage("configure") {
 
         sh "mkdir $WORKSPACE/$BUILD_NUMBER/"
