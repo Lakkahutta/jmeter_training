@@ -10,7 +10,7 @@ node{
 
  stage('run test'){
 
- sh "mkdir /tmp/reports"
+ sh "mkdir -p /tmp/reports"
 
  sh "cd C:/Users/Dzmitry_Mashenkou/Documents/performance/apache-jmeter-5.5/apache-jmeter-5.5/bin"
 
