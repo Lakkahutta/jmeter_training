@@ -2,7 +2,7 @@ String branchName = "testDM"
 String gitCredentials = "gitId"
 String repoUrl = "https://github.com/Lakkahutta/jmeter_training.git"
 
-nodenode('perf-testing-node'){
+node(){
  
  stage('Clone') {
       echo 'Cloning files from (branch: "' + branchName + '" )'
