@@ -2,13 +2,9 @@ String branchName = "testDM"
 String gitCredentials = "gitId"
 String repoUrl = "https://github.com/Lakkahutta/jmeter_training.git"
 
-node{
+nodenode('perf-testing-node'){
  
  stage('Clone') {
-      // Clones the repository from the current branch name
-      echo 'Make the output directory'
-      sh 'mkdir -p build'
-
       echo 'Cloning files from (branch: "' + branchName + '" )'
       dir('build') {
           git branch: branchName, credentialsId: 	gitCredentials, url: repoUrl
