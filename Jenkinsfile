@@ -23,7 +23,7 @@ node(){
 
  sh "mkdir -p /tmp/reports"
 
- sh "cd $WORKSPACE/apache-jmeter-5.5/apache-jmeter-5.5/bin"
+ sh "cd /home/lakkahutta/.jenkins/workspace/apache-jmeter-5.5/apache-jmeter-5.5/bin"
 
  sh "$WORKSPACE/apache-jmeter-5.5/apache-jmeter-5.5/bin/jmeter -n -t build/MAKE-Order-Test.jmx -l /tmp/reports/JMeter.jtl -e -o /tmp/reports/HtmlReport"
 
