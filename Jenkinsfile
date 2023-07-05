@@ -35,7 +35,7 @@ node(){
 
  sh "mv /tmp/reports/* $WORKSPACE/$BUILD_NUMBER/"
 
- archiveArtifacts artifacts: '$BUILD_NUMBER/JMeter.jtl, $BUILD_NUMBER/HtmlReport/index.html'
+ archiveArtifacts artifacts: '${BUILD_NUMBER}*/JMeter.jtl, ${BUILD_NUMBER}*/HtmlReport/index.html'
 
     } 
 }
